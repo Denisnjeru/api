@@ -24,7 +24,7 @@ MODEL = joblib.load('dtree_model.pkl')
 MODEL_LABELS = ['SOUTH C', 'SOUTH B','ROYSAMBU', 'RONGAI', 
 'PARKLANDS', 'KASARANI', 'KAHAWA WEST', 'NGARA']
 
-@app.route('/')
+@app.route('/hello')
 def hello():
     return "Hello World!"
 
