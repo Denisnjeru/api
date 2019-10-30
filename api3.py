@@ -24,6 +24,11 @@ MODEL = joblib.load('dtree_model.pkl')
 MODEL_LABELS = ['SOUTH C', 'SOUTH B','ROYSAMBU', 'RONGAI', 
 'PARKLANDS', 'KASARANI', 'KAHAWA WEST', 'NGARA']
 
+@app.route('/')
+def hello():
+    return "Hello World!"
+
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
